@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+/* Source Sans Pro is now Source Sans 3 on Google Fonts */
+body {
+  margin: 0;
+  font-family: "Source Sans 3", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-serif-4 {
+  font-family: "Source Serif 4", serif;
+}
+
+.font-sans-3 {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hide scrollbar on horizontal scroll containers */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
