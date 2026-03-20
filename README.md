@@ -1,73 +1,32 @@
-# React + TypeScript + Vite
+# EAB Techie - Technical Approach
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance web application built for the EAB initiative, focusing on premium design, responsive layouts, and modern front-end engineering.
 
-Currently, two official plugins are available:
+## Technical Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Framework**: [React 19](https://react.dev/) - Leveraging the latest concurrent features, modern hooks, and optimized rendering.
+- **Language**: [TypeScript](https://www.typescriptlang.org/) - Ensuring robust type safety, better developer experience, and long-term maintainability.
+- **Build Tool**: [Vite 8](https://vitejs.dev/) - Providing an ultra-fast development environment with Hot Module Replacement (HMR) and optimized build pipelines.
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/) - Utilizing a utility-first approach for rapid, consistent, and highly responsive styling.
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/) - Integrating a comprehensive set of modern icons (FontAwesome, Feather, etc.) for a polished UI.
 
-## React Compiler
+## Architectural Philosophy
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Component-Driven Development**: The UI is architected into modular, reusable sections (e.g., `HeroBanner`, `ImpactSection`, `AboutSection`, `Footer`). This promotes clean code separation and easier feature updates.
+- **Pixel-Perfect & Premium Design**: Special attention is paid to typography, spacing, and micro-interactions to deliver a high-end feel that matches modern web standards.
+- **Performance-First**: Assets are optimized, and the code structure is kept lean to ensure fast load times and smooth animations.
+- **Type Safety Layer**: Full TypeScript implementation across all components and utility functions to catch potential issues early.
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- `src/components/`: Core UI components organized by feature and section.
+- `src/assets/`: Static assets, including images and custom SVG icons.
+- `src/test/`: Unit and component testing suite powered by Vitest.
+- `vite.config.ts`: Modern build configuration for optimized performance.
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+## Development Workflows
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+- **Development**: `npm run dev` for local development with HMR.
+- **Testing**: `npm run test` for running the automated test suite.
+- **Build**: `npm run build` for generating an optimized production bundle with TypeScript validation.
+- **Linting**: `npm run lint` for maintaining consistent code style.
