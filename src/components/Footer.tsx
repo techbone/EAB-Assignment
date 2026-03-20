@@ -2,7 +2,6 @@ import {
   FaTelegram,
   FaTiktok,
   FaYoutube,
-  FaFacebook,
   FaXTwitter,
   FaInstagram,
 } from "react-icons/fa6";
