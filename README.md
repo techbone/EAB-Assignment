@@ -1,6 +1,4 @@
-# EAB Techie - Technical Approach
-
-A modern, high-performance web application built for the EAB initiative, focusing on premium design, responsive layouts, and modern front-end engineering.
+# EAB - Technical Approach
 
 ## Technical Stack
 
